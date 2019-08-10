@@ -2,7 +2,7 @@
 #include "Creature.h"
 #include <iostream>
 #include <vector>
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics.hpp"
 
 constexpr bool DEAD = false;
 constexpr bool LIVE = true;
