@@ -21,6 +21,17 @@ int Creature::getAbsolutePositionY()
 	return this->AbsPosY;
 }
 
+void Creature::setPos(int pos)
+{
+	this->Pos = pos;
+}
+
+
+int Creature::getPos()
+{
+	return this->Pos;
+}
+
 bool Creature::getAliveStatus()
 {
 	return this->isAlive;
@@ -39,3 +50,12 @@ void Creature::setAliveStatus(bool status)
 	}
 }
 
+void Creature::setTempStatus(bool status)
+{
+	this->tempStatus = status;
+}
+
+void Creature::applyStatus()
+{
+	this->setAliveStatus(this->tempStatus);
+}
